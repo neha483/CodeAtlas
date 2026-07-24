@@ -1,0 +1,15 @@
+# CodeAtlas dependencies
+#
+# The tool RUNS with zero third-party packages in offline heuristic mode.
+# The packages below unlock LLM-authored analysis and exact token counting.
+
+# --- LLM orchestration (LangChain) ---
+langchain-core>=0.3.0
+langchain-openai>=0.2.0        # only needed for --provider openai
+langchain-anthropic>=0.2.0     # only needed for --provider anthropic
+
+# --- Exact token counting (optional but recommended) ---
+tiktoken>=0.7.0
+
+# --- Convenience: load API keys from a .env file if present (optional) ---
+python-dotenv>=1.0.0
